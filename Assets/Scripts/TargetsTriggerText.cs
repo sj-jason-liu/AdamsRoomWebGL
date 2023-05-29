@@ -29,6 +29,7 @@ public class TargetsTriggerText : MonoBehaviour
         
         _targetStringText = "Pick-up Targets: " + _target1Text + _target2Text + _target3Text;
     }
+    
     private void OnTriggerStay(Collider other)
     {
         if(other.tag == "Player" && GameManager.Instance.Player2DCanControl)
